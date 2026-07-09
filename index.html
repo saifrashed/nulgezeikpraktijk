@@ -12,6 +12,17 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MC82HVPJ');</script>
+    <!-- End Google Tag Manager -->
+
     <script>
         tailwind.config = {
             theme: {
@@ -97,17 +108,21 @@
 </head>
 
 <body class="text-gray-800 antialiased bg-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC82HVPJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
     <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
         <!-- Logo Image -->
-        <a href="#">
+        <a href="#home">
             <img src="./logo.png" alt="Nul Gezeik Praktijk Logo" class="h-24">
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="text-gray-600 hover:text-black font-medium">Partners</a>
-            <a href="#" class="text-gray-600 hover:text-black font-medium">Ook maker van</a>
-            <a href="#"
+            <a href="#partners" class="text-gray-600 hover:text-black font-medium">Partners</a>
+            <a href="#ook-maker-van" class="text-gray-600 hover:text-black font-medium">Ook maker van</a>
+            <a href="https://wa.link/g28jnd"
                 class="bg-brand hover:bg-brand-hover text-white px-6 py-2.5 rounded-full font-medium transition flex items-center">
                 Contact <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
             </a>
@@ -115,7 +130,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-6 py-12 md:py-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="home" class="container mx-auto px-6 py-12 md:py-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
             <div class="flex items-center mb-6">
                 <div class="flex -space-x-2 mr-4">
@@ -146,17 +161,17 @@
                 Besteed uw aandacht aan de taken die ertoe doen.
             </p>
 
-            <a href="#"
+            <a href="https://wa.link/g28jnd"
                 class="inline-block bg-brand hover:bg-brand-hover text-white px-8 py-3 rounded-full font-medium transition mb-8">
                 Vrijblijvende kennismaking <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
 
             <div class="flex flex-wrap gap-4 text-sm font-medium text-gray-600 mb-10">
-                <a href="#" class="hover:text-black">Diensten <i
+                <a href="#services" class="hover:text-black">Diensten <i
                         class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
-                <a href="#" class="hover:text-black">Partners <i
+                <a href="#partners" class="hover:text-black">Partners <i
                         class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
-                <a href="#" class="hover:text-black">Ook maker van <i
+                <a href="#ook-maker-van" class="hover:text-black">Ook maker van <i
                         class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
             </div>
 
@@ -178,7 +193,7 @@
             </div>
         </div>
 
-        <img src="./hero.png" alt="Saif Rashed" class="w-full h-full object-contain">
+        <img src="./hero.png" alt="Saif" class="w-full h-full object-contain">
 
     </section>
 
@@ -237,7 +252,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="container mx-auto px-6 py-20 text-center">
+    <section id="services" class="container mx-auto px-6 py-20 text-center">
         <span class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-4">Diensten</span>
         <h2 class="text-3xl md:text-4xl font-bold mb-10">Alles onder één dak</h2>
 
@@ -257,7 +272,7 @@
         </div>
 
         <div class="mt-10">
-            <a href="#"
+            <a href="#services"
                 class="inline-block bg-brand hover:bg-brand-hover text-white px-8 py-3 rounded-full font-medium transition">
                 Diensten <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
@@ -275,7 +290,7 @@
                     <span
                         class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-4">Werkwijze</span>
                     <h3 class="text-2xl font-bold mb-6">Drie-stappenplan</h3>
-                    <a href="#"
+                    <a href="https://wa.link/g28jnd"
                         class="inline-block bg-brand hover:bg-brand-hover text-white px-6 py-2 rounded-full font-medium text-sm transition">
                         Contact <i class="fa-solid fa-arrow-right ml-1"></i>
                     </a>
@@ -312,44 +327,47 @@
     </section>
 
     <!-- Dental Portfolio Section -->
-    <section class="container mx-auto px-6 py-20 text-center">
+    <section id="partners" class="container mx-auto px-6 py-20 text-center">
         <span class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-4">Partners</span>
         <h2 class="text-3xl md:text-4xl font-bold mb-12 max-w-xl mx-auto">Andere praktijken hebben deze stap al gezet
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div class="portfolio-card">
+            <a href="https://breedveldtandartsen.nl" target="_blank" class="portfolio-card">
                 <img src="./praktijken/1.png" alt="Breedveld tandartsen">
                 <div class="portfolio-overlay">
                     <span class="text-xs font-semibold mb-1">Website</span>
                     <h3 class="text-2xl font-bold">Breedveld tandartsen</h3>
                 </div>
-            </div>
-            <div class="portfolio-card">
+            </a>
+
+            <a href="https://dentalfit.nl" target="_blank" class="portfolio-card">
                 <img src="./praktijken/2.png" alt="Dentalfit">
                 <div class="portfolio-overlay">
                     <span class="text-xs font-semibold mb-1">Website</span>
                     <h3 class="text-2xl font-bold">Dentalfit</h3>
                 </div>
-            </div>
-            <div class="portfolio-card">
+            </a>
+
+            <a href="https://kiesmetverstand.nl" target="_blank" class="portfolio-card">
                 <img src="./praktijken/3.png" alt="KiesMetVerstand">
                 <div class="portfolio-overlay">
                     <span class="text-xs font-semibold mb-1">Website</span>
                     <h3 class="text-2xl font-bold">KiesMetVerstand</h3>
                 </div>
-            </div>
-            <div class="portfolio-card">
+            </a>
+
+            <a href="https://mondzorghardinxveld.nl" target="_blank" class="portfolio-card">
                 <img src="./praktijken/4.png" alt="Mondzorg Hardinxveld">
                 <div class="portfolio-overlay">
                     <span class="text-xs font-semibold mb-1">Website - Marketing</span>
                     <h3 class="text-2xl font-bold">Mondzorg Hardinxveld</h3>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="mt-12">
-            <a href="#"
+            <a href="#partners"
                 class="inline-block bg-brand hover:bg-brand-hover text-white px-8 py-3 rounded-full font-medium transition">
                 Bekijk meer Partners <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
@@ -380,7 +398,7 @@
                     </li>
                 </ul>
 
-                <a href="#"
+                <a href="https://wa.link/g28jnd"
                     class="inline-block bg-brand hover:bg-brand-hover text-white px-8 py-3 rounded-full font-medium transition">
                     Contact <i class="fa-solid fa-arrow-right ml-2"></i>
                 </a>
@@ -426,7 +444,7 @@
     </section>
 
     <!-- Portfolio Other Industries -->
-    <section class="container mx-auto px-6 py-20 text-center border-t border-gray-100">
+    <section id="ook-maker-van" class="container mx-auto px-6 py-20 text-center border-t border-gray-100">
         <span class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-4">Ook maker van</span>
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Van alle markten thuis</h2>
         <p class="text-gray-500 mb-12">Een veelzijdige blik met kennis uit verschillende branches.</p>
@@ -480,7 +498,7 @@
         </div>
 
         <div class="mt-12">
-            <a href="#"
+            <a href="https://wa.link/g28jnd"
                 class="inline-block bg-brand hover:bg-brand-hover text-white px-8 py-3 rounded-full font-medium transition">
                 Contact <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
@@ -543,12 +561,13 @@
                     succesverhalen.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#"
+                    <a href="https://wa.link/g28jnd"
                         class="bg-white text-black px-8 py-3 rounded-full font-medium transition hover:bg-gray-100 flex items-center">
-                        Partners <i class="fa-solid fa-arrow-right ml-2"></i>
+                        Stuur ons een bericht <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-gray-300 font-medium px-4 py-3 flex items-center">
-                        Onze diensten <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-2"></i>
+                    <a href="https://linkedin.com/company/nulgezeikpraktijk"
+                        class="bg-[#0A66C2] text-white px-8 py-3 rounded-full font-medium transition hover:bg-[#004182] flex items-center">
+                        <i class="fa-brands fa-linkedin-in mr-2"></i> Volg ons op LinkedIn
                     </a>
                 </div>
             </div>
@@ -567,11 +586,11 @@
                 <div>
                     <h4 class="font-bold mb-6">Pages</h4>
                     <ul class="space-y-4 text-gray-500 text-sm">
-                        <li><a href="#" class="hover:text-black">Home</a></li>
-                        <li><a href="#" class="hover:text-black">Diensten</a></li>
-                        <li><a href="#" class="hover:text-black">Partners</a></li>
-                        <li><a href="#" class="hover:text-black">Ook maker van</a></li>
-                        <li><a href="#" class="hover:text-black">Contact</a></li>
+                        <li><a href="#home" class="hover:text-black">Home</a></li>
+                        <li><a href="#services" class="hover:text-black">Diensten</a></li>
+                        <li><a href="#partners" class="hover:text-black">Partners</a></li>
+                        <li><a href="#ook-maker-van" class="hover:text-black">Ook maker van</a></li>
+                        <li><a href="https://wa.link/g28jnd" class="hover:text-black">Contact</a></li>
                     </ul>
                 </div>
 
